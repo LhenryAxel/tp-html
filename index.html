@@ -4,160 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Stars</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="dist/output.css" rel="stylesheet"> 
 </head>
-<body>
-    <header>
-        <img src="img/nba_logo.png" alt="NBA Logo" class="logo">
-        <h1>NBA Stars</h1>
-        <nav>
-            <ul>
-                <li><a href="#lebron">LeBron James</a></li>
-                <li><a href="#curry">Stephen Curry</a></li>
-                <li><a href="#durant">Kevin Durant</a></li>
-                <li><a href="#irving">Kyrie Irving</a></li>
-                <li><a href="#doncic">Luka Dončić</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-700 text-white p-4">
+        <div class="flex items-center justify-center relative">
+            <img src="img/nba_logo.png" alt="NBA Logo" class="absolute left-4 top-4 w-16">
+            <h1 class="text-3xl font-bold">NBA Stars</h1>
+        </div>
     </header>
 
-    <main>
-        <section id="lebron" class="player-section">
-            <img src="img/james.jpg" alt="LeBron James">
-            <div class="player-info">
-                <h2>LeBron James</h2>
-                <p><strong>LeBron James</strong> est considéré comme l'un des meilleurs joueurs de l'histoire de la NBA, avec de nombreux titres et MVP. Avec plus de 19 saisons dans la ligue, il continue à montrer une longévité et une performance impressionnantes.</p>
+    <nav class="bg-blue-600 text-white py-3 text-center">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="#lebron" class="hover:underline">LeBron James</a></li>
+            <li><a href="#curry" class="hover:underline">Stephen Curry</a></li>
+            <li><a href="#durant" class="hover:underline">Kevin Durant</a></li>
+            <li><a href="#irving" class="hover:underline">Kyrie Irving</a></li>
+            <li><a href="#doncic" class="hover:underline">Luka Dončić</a></li>
+        </ul>
+    </nav>
 
-                <div class="quote">
-                    <blockquote>
-                        "I like criticism. It makes you strong." - LeBron James
-                    </blockquote>
-                </div>
+    <main class="px-4 py-8 space-y-8">
+        <section id="lebron" class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex flex-col items-center md:flex-row md:items-start">
+                <img src="img/james.jpg" alt="LeBron James" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-2">LeBron James</h2>
+                    <p class="text-gray-700"><strong>LeBron James</strong> est considéré comme l'un des meilleurs joueurs de l'histoire de la NBA, avec de nombreux titres et MVP. Avec plus de 19 saisons dans la ligue, il continue à montrer une longévité et une performance impressionnantes.</p>
+                    <blockquote class="text-lg italic text-gray-500 mt-4">"I like criticism. It makes you strong."</blockquote>
 
-                <div class="teams">
-                    <h3>Teams</h3>
-                    <img src="img/lakers-logo.png" alt="Lakers Logo" class="team-logo">
-                    <img src="img/cavs-logo.png" alt="Cavaliers Logo" class="team-logo">
-                    <img src="img/heat-logo.png" alt="Heat Logo" class="team-logo">
-                </div>
+                    <div class="teams mt-4">
+                        <h3 class="font-bold">Teams</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/lakers-logo.png" alt="Lakers Logo" class="w-10">
+                            <img src="img/cavs-logo.png" alt="Cavaliers Logo" class="w-10">
+                            <img src="img/heat-logo.png" alt="Heat Logo" class="w-10">
+                        </div>
+                    </div>
 
-                <div class="awards">
-                    <h3>Awards</h3>
-                    <img src="img/mvp-badge.png" alt="MVP Badge" class="badge">
-                    <img src="img/championship-badge.png" alt="Championship Badge" class="badge">
-                    <img src="img/all-star-badge.png" alt="All-Star Badge" class="badge">
-                </div>
-            </div>
-        </section>
-
-        <section id="curry" class="player-section">
-            <img src="img/curry.jpg" alt="Stephen Curry">
-            <div class="player-info">
-                <h2>Stephen Curry</h2>
-                <p><strong>Stephen Curry</strong> a révolutionné le basket avec son incroyable capacité à tirer à trois points, remportant plusieurs championnats NBA. Son impact sur le jeu moderne a changé la manière dont les équipes défendent et attaquent sur le terrain.</p>
-
-                <div class="quote">
-                    <blockquote>
-                        "Success is not an accident, success is a choice." - Stephen Curry
-                    </blockquote>
-                </div>
-
-                <div class="teams">
-                    <h3>Teams</h3>
-                    <img src="img/warriors-logo.png" alt="Warriors Logo" class="team-logo">
-                </div>
-
-                <div class="awards">
-                    <h3>Awards</h3>
-                    <img src="img/mvp-badge.png" alt="MVP Badge" class="badge">
-                    <img src="img/championship-badge.png" alt="Championship Badge" class="badge">
-                    <img src="img/all-star-badge.png" alt="All-Star Badge" class="badge">
+                    <div class="awards mt-4">
+                        <h3 class="font-bold">Awards</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/mvp-badge.png" alt="MVP Badge" class="w-10">
+                            <img src="img/championship-badge.png" alt="Championship Badge" class="w-10">
+                            <img src="img/all-star-badge.png" alt="All-Star Badge" class="w-10">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="durant" class="player-section">
-            <img src="img/durant.jpg" alt="Kevin Durant">
-            <div class="player-info">
-                <h2>Kevin Durant</h2>
-                <p><strong>Kevin Durant</strong> est l'un des meilleurs marqueurs de l'histoire de la NBA, avec un jeu complet et des performances incroyables. Son tir en suspension est l'une de ses armes les plus redoutables, et il est un leader sur et en dehors du terrain.</p>
+        <section id="curry" class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex flex-col items-center md:flex-row md:items-start">
+                <img src="img/curry.jpg" alt="Stephen Curry" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-2">Stephen Curry</h2>
+                    <p class="text-gray-700"><strong>Stephen Curry</strong> a révolutionné le basket avec son incroyable capacité à tirer à trois points, remportant plusieurs championnats NBA. Son impact sur le jeu moderne a changé la manière dont les équipes défendent et attaquent sur le terrain.</p>
+                    <blockquote class="text-lg italic text-gray-500 mt-4">"Success is not an accident, success is a choice."</blockquote>
 
-                <div class="quote">
-                    <blockquote>
-                        "Hard work beats talent when talent fails to work hard." - Kevin Durant
-                    </blockquote>
-                </div>
+                    <div class="teams mt-4">
+                        <h3 class="font-bold">Teams</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/warriors-logo.png" alt="Warriors Logo" class="w-10">
+                        </div>
+                    </div>
 
-                <div class="teams">
-                    <h3>Teams</h3>
-                    <img src="img/nets-logo.png" alt="Nets Logo" class="team-logo">
-                    <img src="img/warriors-logo.png" alt="Warriors Logo" class="team-logo">
-                    <img src="img/thunder-logo.png" alt="Thunder Logo" class="team-logo">
-                </div>
-
-                <div class="awards">
-                    <h3>Awards</h3>
-                    <img src="img/mvp-badge.png" alt="MVP Badge" class="badge">
-                    <img src="img/championship-badge.png" alt="Championship Badge" class="badge">
-                    <img src="img/all-star-badge.png" alt="All-Star Badge" class="badge">
-                </div>
-            </div>
-        </section>
-
-        <section id="irving" class="player-section">
-            <img src="img/irving.jpg" alt="Kyrie Irving">
-            <div class="player-info">
-                <h2>Kyrie Irving</h2>
-                <p><strong>Kyrie Irving</strong> est connu pour son maniement de balle exceptionnel et ses performances impressionnantes, notamment en finale NBA. Ses dribbles déroutants et sa capacité à finir près du panier font de lui un joueur unique.</p>
-
-                <div class="quote">
-                    <blockquote>
-                        "Basketball is just a platform for me to inspire people." - Kyrie Irving
-                    </blockquote>
-                </div>
-
-                <div class="teams">
-                    <h3>Teams</h3>
-                    <img src="img/nets-logo.png" alt="Nets Logo" class="team-logo">
-                    <img src="img/cavs-logo.png" alt="Cavaliers Logo" class="team-logo">
-                    <img src="img/celtics-logo.png" alt="Celtics Logo" class="team-logo">
-                </div>
-
-                <div class="awards">
-                    <h3>Awards</h3>
-                    <img src="img/championship-badge.png" alt="Championship Badge" class="badge">
-                    <img src="img/all-star-badge.png" alt="All-Star Badge" class="badge">
+                    <div class="awards mt-4">
+                        <h3 class="font-bold">Awards</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/mvp-badge.png" alt="MVP Badge" class="w-10">
+                            <img src="img/championship-badge.png" alt="Championship Badge" class="w-10">
+                            <img src="img/all-star-badge.png" alt="All-Star Badge" class="w-10">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="doncic" class="player-section">
-            <img src="img/doncic.jpg" alt="Luka Dončić">
-            <div class="player-info">
-                <h2>Luka Dončić</h2>
-                <p><strong>Luka Dončić</strong>, encore jeune, est déjà une star en pleine ascension dans la NBA, impressionnant par ses passes et son scoring. Il est devenu un joueur incontournable, alliant talent et maturité sur le terrain à un âge précoce.</p>
+        <section id="durant" class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex flex-col items-center md:flex-row md:items-start">
+                <img src="img/durant.jpg" alt="Kevin Durant" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-2">Kevin Durant</h2>
+                    <p class="text-gray-700"><strong>Kevin Durant</strong> est l'un des meilleurs marqueurs de l'histoire de la NBA, avec un jeu complet et des performances incroyables. Son tir en suspension est l'une de ses armes les plus redoutables, et il est un leader sur et en dehors du terrain.</p>
+                    <blockquote class="text-lg italic text-gray-500 mt-4">"Hard work beats talent when talent fails to work hard."</blockquote>
 
-                <div class="quote">
-                    <blockquote>
-                        "I always want to win." - Luka Dončić
-                    </blockquote>
+                    <div class="teams mt-4">
+                        <h3 class="font-bold">Teams</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/nets-logo.png" alt="Nets Logo" class="w-10">
+                            <img src="img/warriors-logo.png" alt="Warriors Logo" class="w-10">
+                            <img src="img/thunder-logo.png" alt="Thunder Logo" class="w-10">
+                        </div>
+                    </div>
+
+                    <div class="awards mt-4">
+                        <h3 class="font-bold">Awards</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/mvp-badge.png" alt="MVP Badge" class="w-10">
+                            <img src="img/championship-badge.png" alt="Championship Badge" class="w-10">
+                            <img src="img/all-star-badge.png" alt="All-Star Badge" class="w-10">
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="teams">
-                    <h3>Teams</h3>
-                    <img src="img/mavs-logo.png" alt="Mavericks Logo" class="team-logo">
+        <section id="irving" class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex flex-col items-center md:flex-row md:items-start">
+                <img src="img/irving.jpg" alt="Kyrie Irving" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-2">Kyrie Irving</h2>
+                    <p class="text-gray-700"><strong>Kyrie Irving</strong> est connu pour son maniement de balle exceptionnel et ses performances impressionnantes, notamment en finale NBA. Ses dribbles déroutants et sa capacité à finir près du panier font de lui un joueur unique.</p>
+                    <blockquote class="text-lg italic text-gray-500 mt-4">"Basketball is just a platform for me to inspire people."</blockquote>
+
+                    <div class="teams mt-4">
+                        <h3 class="font-bold">Teams</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/nets-logo.png" alt="Nets Logo" class="w-10">
+                            <img src="img/cavs-logo.png" alt="Cavaliers Logo" class="w-10">
+                            <img src="img/celtics-logo.png" alt="Celtics Logo" class="w-10">
+                        </div>
+                    </div>
+
+                    <div class="awards mt-4">
+                        <h3 class="font-bold">Awards</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/championship-badge.png" alt="Championship Badge" class="w-10">
+                            <img src="img/all-star-badge.png" alt="All-Star Badge" class="w-10">
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="awards">
-                    <h3>Awards</h3>
-                    <img src="img/all-star-badge.png" alt="All-Star Badge" class="badge">
-                    <img src="img/rookie-of-the-year-badge.png" alt="Rookie of the Year Badge" class="badge">
+        <section id="doncic" class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex flex-col items-center md:flex-row md:items-start">
+                <img src="img/doncic.jpg" alt="Luka Dončić" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold mb-2">Luka Dončić</h2>
+                    <p class="text-gray-700"><strong>Luka Dončić</strong>, encore jeune, est déjà une star en pleine ascension dans la NBA, impressionnant par ses passes et son scoring. Il est devenu un joueur incontournable, alliant talent et maturité sur le terrain à un âge précoce.</p>
+                    <blockquote class="text-lg italic text-gray-500 mt-4">"I always want to win."</blockquote>
+
+                    <div class="teams mt-4">
+                        <h3 class="font-bold">Teams</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/mavs-logo.png" alt="Mavericks Logo" class="w-10">
+                        </div>
+                    </div>
+
+                    <div class="awards mt-4">
+                        <h3 class="font-bold">Awards</h3>
+                        <div class="flex space-x-4">
+                            <img src="img/all-star-badge.png" alt="All-Star Badge" class="w-10">
+                            <img src="img/rookie-of-the-year-badge.png" alt="Rookie of the Year Badge" class="w-10">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-red-600 text-white text-center py-4">
         <p>&copy; 2024 NBA Stars</p>
     </footer>
 </body>
