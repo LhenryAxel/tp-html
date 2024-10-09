@@ -15,15 +15,29 @@
     </header>
 
     <nav class="bg-blue-600 text-white py-3 text-center">
-        <ul class="flex justify-center space-x-4">
-            <li><a href="#lebron" class="hover:underline">LeBron James</a></li>
-            <li><a href="#curry" class="hover:underline">Stephen Curry</a></li>
-            <li><a href="#durant" class="hover:underline">Kevin Durant</a></li>
-            <li><a href="#irving" class="hover:underline">Kyrie Irving</a></li>
-            <li><a href="#doncic" class="hover:underline">Luka Dončić</a></li>
-        </ul>
+        <!-- Player Tabs -->
+        <div class="mb-2">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#lebron" class="hover:underline">LeBron James</a></li>
+                <li><a href="#curry" class="hover:underline">Stephen Curry</a></li>
+                <li><a href="#durant" class="hover:underline">Kevin Durant</a></li>
+                <li><a href="#irving" class="hover:underline">Kyrie Irving</a></li>
+                <li><a href="#doncic" class="hover:underline">Luka Dončić</a></li>
+            </ul>
+        </div>
+        
+        <!-- Divider to separate players and teams -->
+        <hr class="border-gray-300 my-4 w-4/5 mx-auto">
+    
+        <!-- Team Tabs -->
+        <div>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="teams/golden-state-warriors.html" class="hover:underline">Golden State Warriors</a></li>
+                <!-- Add more teams here later -->
+            </ul>
+        </div>
     </nav>
-
+    
     <main class="px-4 py-8 space-y-8">
         
         <section id="lebron" class="bg-white shadow-lg rounded-lg p-6">
@@ -166,7 +180,7 @@
         </section>
     </main>
 
-    <footer class="bg-red-600 text-white text-center py-4">
+    <footer class="bg-red-600 text-white p-4 text-center fixed bottom-0 left-0 w-full">
         <p>&copy; 2024 NBA Stars</p>
     </footer>
 </body>
