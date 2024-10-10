@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Stars</title>
     <link href="dist/output.css" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet"> 
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="bg-blue-700 text-white p-4">
@@ -13,34 +14,21 @@
             <h1 class="text-3xl font-bold">NBA Stars</h1>
         </div>
     </header>
-
     <nav class="bg-blue-600 text-white py-3 text-center">
-        <!-- Player Tabs -->
         <div class="mb-2">
             <ul class="flex justify-center space-x-4">
-                <li><a href="#lebron" class="hover:underline">LeBron James</a></li>
-                <li><a href="#curry" class="hover:underline">Stephen Curry</a></li>
-                <li><a href="#durant" class="hover:underline">Kevin Durant</a></li>
-                <li><a href="#irving" class="hover:underline">Kyrie Irving</a></li>
-                <li><a href="#doncic" class="hover:underline">Luka Dončić</a></li>
-            </ul>
-        </div>
-        
-        <!-- Divider to separate players and teams -->
-        <hr class="border-gray-300 my-4 w-4/5 mx-auto">
-    
-        <!-- Team Tabs -->
-        <div>
-            <ul class="flex justify-center space-x-4">
-                <li><a href="teams/golden-state-warriors.html" class="hover:underline">Golden State Warriors</a></li>
-                <!-- Add more teams here later -->
+                <li><a href="#lebron">LeBron James</a></li>
+                <li><a href="#curry">Stephen Curry</a></li>
+                <li><a href="#durant">Kevin Durant</a></li>
+                <li><a href="#irving">Kyrie Irving</a></li>
+                <li><a href="#doncic">Luka Dončić</a></li>
             </ul>
         </div>
     </nav>
     
     <main class="px-4 py-8 space-y-8">
         
-        <section id="lebron" class="bg-white shadow-lg rounded-lg p-6">
+        <section id="lebron" class="player-section bg-white shadow-lg rounded-lg p-6">
             <div class="flex flex-col items-center md:flex-row md:items-start">
                 <img src="img/james.jpg" alt="LeBron James" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
@@ -65,11 +53,19 @@
                             <img src="img/all-star-badge.png" alt="All-Star Badge" style="width: 60px; height: 40px !important;">
                         </div>
                     </div>
+        
+                    <button id="showMoreLeBron" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+                        Voir plus
+                    </button>
+                                            
+                    <div id="moreInfoLeBron" class="hidden mt-4 text-gray-700">
+                        <p>LeBron James a aussi initié de nombreux projets sociaux à travers sa fondation.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section id="curry" class="bg-white shadow-lg rounded-lg p-6">
+        <section id="curry" class="player-section bg-white shadow-lg rounded-lg p-6">
             <div class="flex flex-col items-center md:flex-row md:items-start">
                 <img src="img/curry.jpg" alt="Stephen Curry" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
@@ -92,11 +88,19 @@
                             <img src="img/all-star-badge.png" alt="All-Star Badge" style="width: 60px; height: 40px !important;">
                         </div>
                     </div>
+        
+                    <button id="showMoreCurry" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+                        Voir plus
+                    </button>
+        
+                    <div id="moreInfoCurry" class="hidden mt-4 text-gray-700">
+                        <p>Stephen Curry a fait don de millions pour des œuvres de bienfaisance à travers sa fondation.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section id="durant" class="bg-white shadow-lg rounded-lg p-6">
+        <section id="durant" class="player-section bg-white shadow-lg rounded-lg p-6">
             <div class="flex flex-col items-center md:flex-row md:items-start">
                 <img src="img/durant.jpg" alt="Kevin Durant" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
@@ -121,11 +125,19 @@
                             <img src="img/all-star-badge.png" alt="All-Star Badge" style="width: 60px; height: 40px !important;">
                         </div>
                     </div>
+        
+                    <button id="showMoreDurant" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+                        Voir plus
+                    </button>
+        
+                    <div id="moreInfoDurant" class="hidden mt-4 text-gray-700">
+                        <p>Kevin Durant a également soutenu des œuvres de charité à travers plusieurs initiatives sociales.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section id="irving" class="bg-white shadow-lg rounded-lg p-6">
+        <section id="irving" class="player-section bg-white shadow-lg rounded-lg p-6">
             <div class="flex flex-col items-center md:flex-row md:items-start">
                 <img src="img/irving.jpg" alt="Kyrie Irving" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
@@ -149,11 +161,19 @@
                             <img src="img/all-star-badge.png" alt="All-Star Badge" style="width: 60px; height: 40px !important;">
                         </div>
                     </div>
+        
+                    <button id="showMoreIrving" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+                        Voir plus
+                    </button>
+        
+                    <div id="moreInfoIrving" class="hidden mt-4 text-gray-700">
+                        <p>Kyrie Irving a également investi dans des œuvres sociales à travers sa fondation.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section id="doncic" class="bg-white shadow-lg rounded-lg p-6">
+        <section id="doncic" class="player-section bg-white shadow-lg rounded-lg p-6">
             <div class="flex flex-col items-center md:flex-row md:items-start">
                 <img src="img/doncic.jpg" alt="Luka Dončić" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
@@ -175,13 +195,25 @@
                             <img src="img/rookie-of-the-year-badge.png" alt="Rookie of the Year Badge" style="width: 70px; height: 40px !important;">
                         </div>
                     </div>
+        
+                    <button id="showMoreDoncic" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+                        Voir plus
+                    </button>
+        
+                    <div id="moreInfoDoncic" class="hidden mt-4 text-gray-700">
+                        <p>Luka Dončić soutient de nombreuses œuvres caritatives, en particulier en Slovénie, son pays d'origine.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section>     
+        <br> 
     </main>
 
     <footer class="bg-red-600 text-white p-4 text-center fixed bottom-0 left-0 w-full">
         <p>&copy; 2024 NBA Stars</p>
     </footer>
+    
+    <script src="app.js"></script>
+
 </body>
 </html>
