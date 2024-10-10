@@ -14,6 +14,7 @@
             <h1 class="text-3xl font-bold">NBA Stars</h1>
         </div>
     </header>
+    
     <nav class="bg-blue-600 text-white py-3 text-center">
         <div class="mb-2">
             <ul class="flex justify-center space-x-4">
@@ -33,7 +34,6 @@
                 <img src="img/james.jpg" alt="LeBron James" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
                     <h2 class="text-2xl font-bold mb-2">LeBron James</h2>
-                    <p class="text-gray-700"><strong>LeBron James</strong> est considéré comme l'un des meilleurs joueurs de l'histoire de la NBA, avec de nombreux titres et MVP. Avec plus de 19 saisons dans la ligue, il continue à montrer une longévité et une performance impressionnantes.</p>
                     <blockquote class="text-lg italic text-gray-500 mt-4">"I like criticism. It makes you strong."</blockquote>
         
                     <div class="teams mt-4">
@@ -55,11 +55,11 @@
                     </div>
         
                     <button id="showMoreLeBron" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-                        Voir plus
+                        Show more
                     </button>
                                             
                     <div id="moreInfoLeBron" class="hidden mt-4 text-gray-700">
-                        <p>LeBron James a aussi initié de nombreux projets sociaux à travers sa fondation.</p>
+                        <p id="lebronDescription"></p> 
                     </div>
                 </div>
             </div>
@@ -70,7 +70,6 @@
                 <img src="img/curry.jpg" alt="Stephen Curry" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
                     <h2 class="text-2xl font-bold mb-2">Stephen Curry</h2>
-                    <p class="text-gray-700"><strong>Stephen Curry</strong> a révolutionné le basket avec son incroyable capacité à tirer à trois points, remportant plusieurs championnats NBA. Son impact sur le jeu moderne a changé la manière dont les équipes défendent et attaquent sur le terrain.</p>
                     <blockquote class="text-lg italic text-gray-500 mt-4">"Success is not an accident, success is a choice."</blockquote>
         
                     <div class="teams mt-4">
@@ -90,11 +89,11 @@
                     </div>
         
                     <button id="showMoreCurry" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-                        Voir plus
+                        Show more
                     </button>
         
                     <div id="moreInfoCurry" class="hidden mt-4 text-gray-700">
-                        <p>Stephen Curry a fait don de millions pour des œuvres de bienfaisance à travers sa fondation.</p>
+                        <p id="curryDescription"></p> 
                     </div>
                 </div>
             </div>
@@ -105,7 +104,6 @@
                 <img src="img/durant.jpg" alt="Kevin Durant" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
                     <h2 class="text-2xl font-bold mb-2">Kevin Durant</h2>
-                    <p class="text-gray-700"><strong>Kevin Durant</strong> est l'un des meilleurs marqueurs de l'histoire de la NBA, avec un jeu complet et des performances incroyables. Son tir en suspension est l'une de ses armes les plus redoutables, et il est un leader sur et en dehors du terrain.</p>
                     <blockquote class="text-lg italic text-gray-500 mt-4">"Hard work beats talent when talent fails to work hard."</blockquote>
         
                     <div class="teams mt-4">
@@ -127,11 +125,11 @@
                     </div>
         
                     <button id="showMoreDurant" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-                        Voir plus
+                        Show more
                     </button>
         
                     <div id="moreInfoDurant" class="hidden mt-4 text-gray-700">
-                        <p>Kevin Durant a également soutenu des œuvres de charité à travers plusieurs initiatives sociales.</p>
+                        <p id="durantDescription"></p> 
                     </div>
                 </div>
             </div>
@@ -142,7 +140,6 @@
                 <img src="img/irving.jpg" alt="Kyrie Irving" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
                     <h2 class="text-2xl font-bold mb-2">Kyrie Irving</h2>
-                    <p class="text-gray-700"><strong>Kyrie Irving</strong> est connu pour son maniement de balle exceptionnel et ses performances impressionnantes, notamment en finale NBA. Ses dribbles déroutants et sa capacité à finir près du panier font de lui un joueur unique.</p>
                     <blockquote class="text-lg italic text-gray-500 mt-4">"Basketball is just a platform for me to inspire people."</blockquote>
         
                     <div class="teams mt-4">
@@ -163,12 +160,11 @@
                     </div>
         
                     <button id="showMoreIrving" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-                        Voir plus
+                        Show more
                     </button>
         
                     <div id="moreInfoIrving" class="hidden mt-4 text-gray-700">
-                        <p>Kyrie Irving a également investi dans des œuvres sociales à travers sa fondation.</p>
-                    </div>
+                        <p id="irvingDescription"></p> 
                 </div>
             </div>
         </section>
@@ -178,7 +174,6 @@
                 <img src="img/doncic.jpg" alt="Luka Dončić" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
                 <div class="text-center md:text-left">
                     <h2 class="text-2xl font-bold mb-2">Luka Dončić</h2>
-                    <p class="text-gray-700"><strong>Luka Dončić</strong>, encore jeune, est déjà une star en pleine ascension dans la NBA, impressionnant par ses passes et son scoring. Il est devenu un joueur incontournable, alliant talent et maturité sur le terrain à un âge précoce.</p>
                     <blockquote class="text-lg italic text-gray-500 mt-4">"I always want to win."</blockquote>
         
                     <div class="teams mt-4">
@@ -197,11 +192,11 @@
                     </div>
         
                     <button id="showMoreDoncic" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
-                        Voir plus
+                        Show more
                     </button>
         
                     <div id="moreInfoDoncic" class="hidden mt-4 text-gray-700">
-                        <p>Luka Dončić soutient de nombreuses œuvres caritatives, en particulier en Slovénie, son pays d'origine.</p>
+                        <p id="doncicDescription"></p> 
                     </div>
                 </div>
             </div>
