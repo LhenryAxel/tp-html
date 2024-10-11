@@ -107,3 +107,86 @@ nav a:hover::after {
 nav a:hover {
     color: #f1f1f1; 
 }
+
+/* Basic styling for navigation */
+.navbar {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Desktop navigation */
+.desktop-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav li {
+    display: inline;
+}
+
+.desktop-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Mobile navigation (hidden by default) */
+.mobile-nav {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    gap: 5px; 
+    margin-top: -80px; 
+    padding-top: -50px;
+    padding: 0;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px; 
+}
+
+.mobile-nav-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none; 
+    align-self: flex-end;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    padding-bottom: -50px;
+    margin-bottom: -100px;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;  /* Hide desktop navigation on small screens */
+    }
+
+    .mobile-nav-toggle {
+        display: block;  /* Show the hamburger button only on small screens */
+    }
+
+    .mobile-nav {
+        display: flex;  /* Show mobile nav when toggled */
+        margin-top: 0;  /* Ensure no gap on top */
+    }
+}

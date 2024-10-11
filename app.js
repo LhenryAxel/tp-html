@@ -115,3 +115,23 @@ showMoreDoncic.addEventListener('click', function() {
         showMoreDoncic.textContent = 'Show more'; 
     }
 });
+
+// Get references to the button and mobile menu
+const navToggle = document.getElementById('navToggle');
+const mobilePlayerLinks = document.getElementById('mobilePlayerLinks');
+
+// Event listener to toggle mobile navigation visibility
+navToggle.addEventListener('click', function() {
+    if (mobilePlayerLinks.style.display === 'none' || mobilePlayerLinks.style.display === '') {
+        mobilePlayerLinks.style.display = 'flex';  // Show the mobile menu
+    } else {
+        mobilePlayerLinks.style.display = 'none';  // Hide the mobile menu
+    }
+});
+
+// Event listener to hide the mobile menu when resizing to a larger screen
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        mobilePlayerLinks.style.display = 'none';  // Hide the mobile menu when screen size increases
+    }
+});

@@ -15,9 +15,26 @@
         </div>
     </header>
     
-    <nav class="bg-blue-600 text-white py-3 text-center">
-        <div class="mb-2">
-            <ul class="flex justify-center space-x-4">
+    <nav class="navbar">
+        <div class="container">
+            <!-- Mobile Menu Toggle Button (only visible on small screens) -->
+            <button id="navToggle" class="mobile-nav-toggle">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        
+            <!-- Mobile Navigation Links (hidden by default) -->
+            <ul id="mobilePlayerLinks" class="mobile-nav hidden">
+                <li><a href="#lebron">LeBron James</a></li>
+                <li><a href="#curry">Stephen Curry</a></li>
+                <li><a href="#durant">Kevin Durant</a></li>
+                <li><a href="#irving">Kyrie Irving</a></li>
+                <li><a href="#doncic">Luka Dončić</a></li>
+            </ul>
+        
+            <!-- Desktop Navigation Links (always visible on large screens) -->
+            <ul id="playerLinks" class="desktop-nav">
                 <li><a href="#lebron">LeBron James</a></li>
                 <li><a href="#curry">Stephen Curry</a></li>
                 <li><a href="#durant">Kevin Durant</a></li>
@@ -25,10 +42,11 @@
                 <li><a href="#doncic">Luka Dončić</a></li>
             </ul>
         </div>
-    </nav>
+    </nav>    
     
     <main class="px-4 py-8 space-y-8">
         
+        <!-- Players Sections to show info -->
         <section id="lebron" class="player-section bg-white shadow-lg rounded-lg p-6">
             <div class="flex flex-col items-center md:flex-row md:items-start">
                 <img src="img/james.jpg" alt="LeBron James" class="w-auto h-32 max-w-full object-contain rounded-full mb-4 md:mb-0 md:mr-6">
